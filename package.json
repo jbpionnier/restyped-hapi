@@ -1,0 +1,38 @@
+{
+  "name": "restyped-hapi",
+  "version": "0.0.1",
+  "description": "Restyped Hapi",
+  "author": "Jean-Baptiste Pionnier",
+  "homepage": "https://github.com/jbpionnier/restyped-hapi#readme",
+  "license": "MIT",
+  "repository": "jbpionnier/restyped-hapi",
+  "keywords": [
+    "hapi",
+    "restyped",
+    "typescript"
+  ],
+  "engines": {
+    "node": ">=6.x.x"
+  },
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prettier": "prettier --write --no-semi --single-quote --print-width 130 --trailing-comma all --parser typescript src/**/*.ts *.ts",
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
+  "dependencies": {
+    "@types/hapi": "^17.0.0",
+    "restyped": "1.1.0"
+  },
+  "peerDependencies": {
+    "hapi": "^17.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^2.6.2"
+  }
+}
